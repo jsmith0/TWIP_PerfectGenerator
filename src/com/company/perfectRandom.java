@@ -1,12 +1,11 @@
 package com.company;
 
-/**
- * Created by js456 on 10/10/16.
- */
+import java.util.*;
+
 public class perfectRandom {
     public static int perfsqr ()
     {
-        int c = (int) (Math.random() 20+1);
+      int c = (int)(Math.random()*13);
         c = c*c;
         int cout = c;
         return cout;
