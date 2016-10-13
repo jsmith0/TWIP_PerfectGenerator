@@ -23,14 +23,19 @@ public class Main {
                int response = kb.nextInt();
                if (response == 0) {
                    break outerloop;
-               } else if (response == 1) {
+               }
+               else if (response == 1) {
                    for (Object x : names) {
                        if (x != null) {
                            System.out.println(x.toString());
                        }
                    }
                    break;
-               } else if (response != 0 || response != 1 || response != 2) {
+               }
+               else if (response == 2) {
+                break;
+               }
+               else if (response != 0 || response != 1 || response != 2){
                    System.out.println("Please enter a valid number.");
                }
            }
